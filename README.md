@@ -1,1 +1,1 @@
-# lucky-pizza.github.io
+# LuckyPizza
