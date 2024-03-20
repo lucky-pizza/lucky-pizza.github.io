@@ -6,6 +6,7 @@
 
 body {
     margin: 0;
+
 }
 
 .flex-container {
@@ -21,6 +22,7 @@ body {
     margin: 0 10px;
     text-align: center;
     font-size: 20px;
+    
 }
 
 nav {
@@ -37,6 +39,8 @@ a {
     font-weight: bold;
     font-size: 25px;
     color: rgb(236, 194, 149);
+    text-shadow: 0 0 0px #000000, 0 0 5px #000000;
+
 }
 
 nav a:hover {
@@ -44,6 +48,8 @@ nav a:hover {
 }
 
 .page-container {
+    position: relative;
+    overflow: hidden;
     color: rgb(236, 194, 149);
     height: 100vh;
     margin: 0;
@@ -65,6 +71,7 @@ nav a:hover {
     top: 2em;
     font-weight: bold;
     margin: 0;
+    text-shadow: 0 0 0px #000000, 0 0 5px #000000;
 
 }
 
@@ -78,7 +85,7 @@ nav a:hover {
     flex-grow: 1;
 }
 
-.logo {
+.logchiedio {
     width: 24em;
     height: auto;
 }
@@ -92,8 +99,8 @@ nav a:hover {
 }
 
 .contact-icon {
-    width: 2.6em;
-    height: 2.6em;
+    width: 2em;
+    height: 2em;
 }
 
 .first-pizza {
@@ -108,4 +115,74 @@ nav a:hover {
     height: 70%;
     right: -15%;
     top: -15%;
+}
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 600px) {
+    .title-container {
+        position: static;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    nav {
+        display: block;
+        text-align: center;
+        padding: 2em;
+    }
+
+    nav a {
+        padding: 10px 0px;
+        margin: 0 10px;
+        font-size: 18px;
+        text-shadow: 0 0 0px #000000, 0 0 5px #000000;
+
+    }
+    nav h1 {
+        text-shadow: 0 0 0px #000000, 0 0 5px #000000;
+    }
+    .flex-container>h1 {
+        padding: 20px;
+        margin: 0 10px;
+        font-size: 24px;
+    }
+
+    .flex-container>a {
+        padding: 10px;
+        margin: 0 5px;
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .contacts-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+        margin: 1em;
+    }
+
+    .contact-icon {
+        width: 1em;
+        height: 1em;
+        margin: 5px;
+    }
+
+    .first-pizza {
+        position: absolute;
+        top: 60%;
+        left: -30%;
+        height: 30%;
+    }
+
+    .second-pizza {
+        position: absolute;
+        height: 30%;
+        right: -30%;
+        top: 15%;
+    }
 }
