@@ -1,0 +1,97 @@
+
+
+/* Orologio */
+.clock {
+  position: relative;
+  width: 200px;
+  height: 200px;
+
+  border: 5px solid var(--light_brown);
+  border-radius: 50%;
+  margin: 50px auto;
+}
+
+.hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 1px;
+  height: 40%;
+  background: var(--light_brown);
+  transform-origin: bottom;
+}
+
+.hour-hand {
+  animation: hour-spin infinite 12h linear;
+}
+
+.minute-hand {
+  animation: minute-spin infinite 3600s linear;
+}
+
+.second-hand {
+  height: 45%;
+  animation: second-spin infinite 60s linear;
+}
+
+@keyframes second-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes minute-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hour-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+} 
+
+
+
+@media (max-width: 1024px) {
+
+
+  .clock {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .contenitore-clock h2 {
+    font-size: 1rem;
+    color: var(--light_brown);
+  }
+}
+
+@media (max-width: 376px) {
+
+
+  .clock {
+    width: 4rem;
+    /* Dimezzato da 8rem */
+    height: 4rem;
+    /* Dimezzato da 8rem */
+  }
+
+
+  .contenitore-clock h2 {
+    font-size: 0.75rem;
+  }
+}
