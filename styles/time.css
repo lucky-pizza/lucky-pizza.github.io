@@ -8,7 +8,7 @@ body {
 }
 
 .page-container {
-    background-image: url('./../../images/backgrounds/shapes.png');
+    background-image: url('./../../images/backgrounds/shapes.webp');
 }
 
 .orari-container {
@@ -20,6 +20,7 @@ body {
     justify-content: center;
     flex-direction: row;
     gap: 8em;
+    font-size: 1.1em;
     flex-grow: 1;
     z-index: 2;
 }
@@ -37,5 +38,6 @@ body {
     .orari-container {
         flex-direction: column;
         gap: 2em;
+        font-size: 0.8em;
     }
 }
