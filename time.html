@@ -1,88 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Orari - Lucky Pizza</title>
+    <title>Orari di Apertura - Lucky Pizza</title>
     <meta name="description"
-        content="Orari di apertura di Lucky Pizza a Castelfranco Veneto. Ordina la tua pizza preferita e goditi il gusto autentico dell'Italia." />
+        content="Orari di apertura di Lucky Pizza a Castelfranco Veneto. Scopri quando siamo aperti e ordina la tua pizza preferita." />
     <meta name="keywords"
-        content="Pizza a domicilio, Pizzeria a Castelfranco Veneto, Menu pizza, Consegna a domicilio, Ordina pizza online, Pizzeria Lucky Pizza, Pizza da asporto, Pizza italiana, Orari di apertura" />
+        content="Pizza a domicilio, Pizzeria a Castelfranco Veneto, Orari pizzeria, Orari Lucky Pizza, Pizza da asporto, Ordina pizza" />
     <meta name="author" content="trincaw" />
-    <link rel="canonical" href="https://luckypizza.it/orari" />
+    <link rel="canonical" href="https://luckypizza.it/time.html" />
     <meta property="og:locale" content="it_IT" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Orari - Lucky Pizza" />
+    <meta property="og:title" content="Orari di Apertura - Lucky Pizza" />
     <meta property="og:description"
-        content="Orari di apertura di Lucky Pizza a Castelfranco Veneto. Ordina la tua pizza preferita e goditi il gusto autentico dell'Italia." />
-    <meta property="og:url" content="https://luckypizza.it/orari" />
+        content="Orari di apertura di Lucky Pizza a Castelfranco Veneto. Scopri quando siamo aperti e ordina la tua pizza preferita." />
+    <meta property="og:url" content="https://luckypizza.it/time.html" />
     <meta property="og:site_name" content="Lucky Pizza" />
+    <meta property="og:image" content="https://luckypizza.it/assets/svgs/ck_180x180.png" />
     <meta property="og:image:alt" content="Logo Lucky Pizza" />
-    <meta property="og:image" content="assets/svgs/ck_180x180.png" />
-    <link rel="stylesheet" href="styles/default.css" />
-    <link rel="stylesheet" href="styles/time.css" />
-    <link rel="stylesheet" href="styles/others/clock.css" />
+    <link rel="stylesheet" href="styles/main.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/svgs/ck_180x180.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/svgs/ck_32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/svgs/ck_16x16.png" />
     <link rel="manifest" href="manifest.json" />
 </head>
 
-
 <body>
-    <div class="page-container">
-        <nav>
-            <h1 class="title-container" href="/">
-                LUCKY PIZZA
-            </h1>
-            <a href="/">HOME</a>
-            <a href="/time.html">ORARI</a>
-            <a href="/about-us.html">CHI SIAMO</a>
-        </nav>
-        <div class="orari-container">
-            <div>
-                <div class="contenitore-clock">
-                    <div class="clock">
-                        <div class="hand hour-hand"></div>
-                        <div class="hand minute-hand"></div>
-                        <div class="hand second-hand"></div>
+    <a href="#main" class="skip-link">Vai al contenuto</a>
+    <div class="page page--hours">
+        <header class="header">
+            <div class="header__inner">
+                <a href="/" class="header__brand" aria-label="Lucky Pizza - Home">LUCKY PIZZA</a>
+                <button class="header__toggle" aria-label="Apri menu" aria-expanded="false" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav" id="nav-menu" aria-label="Navigazione principale">
+                    <a href="/" class="nav__link">Home</a>
+                    <a href="/time.html" class="nav__link nav__link--active" aria-current="page">Orari</a>
+                    <a href="/about-us.html" class="nav__link">Chi Siamo</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main" id="main">
+            <section class="hours">
+                <h1 class="hours__title">Orari di Apertura</h1>
+
+                <div class="hours__clock" aria-hidden="true">
+                    <div class="clock" id="clock">
+                        <div class="clock__hand clock__hand--hour" id="hour-hand"></div>
+                        <div class="clock__hand clock__hand--minute" id="minute-hand"></div>
+                        <div class="clock__hand clock__hand--second" id="second-hand"></div>
+                        <div class="clock__center"></div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <h2><b>Lunedì</b> </br>12:00 - 14.00</br>18:00 - 22.00 </h2>
-                <h2><b>Martedì</b> </br> Chiuso </h2>
-                <h2><b>Mercoledì</b> </br>12:00 - 14.00</br>18:00 - 22.00 </h2>
-                <h2><b>Giovedì</b> </br>12:00 - 14.00</br>18:00 - 22.00 </h2>
-                <h2><b>Venerdì</b> </br>12:00 - 14.00</br>18:00 - 22.00 </h2>
-                <h2><b>Sabato</b> </br> 18:00 - 22:00</h2>
-                <h2><b>Domenica</b> </br> 18:00 - 22:00</h2>
-                
-            </div>
-        </div>
 
-        <div class="contacts-container">
-            <a href="https://maps.app.goo.gl/DLjW94JNhshWtE4y5"><img class="contact-icon" src="./assets/svgs/maps.svg"
-                    alt="GoogleMaps"></a>
-            <a
-                href="https://deliveroo.it/it/menu/Castelfranco%20Veneto/castelfranco-veneto/lucky-pizza-via-romanina-20-m/?geohash=u207z6mbuhh6"><img
-                    class="contact-icon" src="./assets/svgs/deliveroo.svg" alt="Deliveroo"></a>
-            <a href="https://www.foodracers.com/it/cities/castelfranco-veneto/restaurants/lucky-pizza-castelfranco"><img
-                    class="contact-icon" src="./assets/svgs/foodracer.svg" alt="Foodracer"></a>
-            <a href="tel:3513353755"><img class="contact-icon" src="./assets/svgs/phone.svg" alt="Phone"></a>
-            <a href="https://www.instagram.com/luckypizza_official/"><img class="contact-icon"
-                    src="./assets/svgs/instagram.svg" alt="Instagram"></a>
-            <a href="https://www.facebook.com/share/XznnFEq6gCsdy27y/"><img class="contact-icon"
-                    src="./assets/svgs/facebook.svg" alt="Facebook"></a>
-            <a href="mailto:comarinlucky@gmail.com"><img class="contact-icon" src="./assets/svgs/mail.svg"
-                    alt="Mail"></a>
-        </div>
-        <div class="iva">
+                <div class="hours__list" role="list">
+                    <div class="hours__item" role="listitem">
+                        <span class="hours__day">Lunedì</span>
+                        <span class="hours__time">
+                            <span>12:00 – 14:00</span>
+                            <span>18:00 – 22:00</span>
+                        </span>
+                    </div>
+                    <div class="hours__item hours__item--closed" role="listitem">
+                        <span class="hours__day">Martedì</span>
+                        <span class="hours__time">
+                            <span class="hours__badge">Chiuso</span>
+                        </span>
+                    </div>
+                    <div class="hours__item" role="listitem">
+                        <span class="hours__day">Mercoledì</span>
+                        <span class="hours__time">
+                            <span>18:00 – 22:00</span>
+                        </span>
+                    </div>
+                    <div class="hours__item" role="listitem">
+                        <span class="hours__day">Giovedì</span>
+                        <span class="hours__time">
+                            <span>12:00 – 14:00</span>
+                            <span>18:00 – 22:00</span>
+                        </span>
+                    </div>
+                    <div class="hours__item" role="listitem">
+                        <span class="hours__day">Venerdì</span>
+                        <span class="hours__time">
+                            <span>12:00 – 14:00</span>
+                            <span>18:00 – 22:00</span>
+                        </span>
+                    </div>
+                    <div class="hours__item" role="listitem">
+                        <span class="hours__day">Sabato</span>
+                        <span class="hours__time">
+                            <span>18:00 – 22:00</span>
+                        </span>
+                    </div>
+                    <div class="hours__item" role="listitem">
+                        <span class="hours__day">Domenica</span>
+                        <span class="hours__time">
+                            <span>18:00 – 22:00</span>
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contacts" aria-label="Contatti e social">
+                <a href="https://maps.app.goo.gl/DLjW94JNhshWtE4y5" class="contacts__link" aria-label="Trovaci su Google Maps" rel="noopener noreferrer" target="_blank">
+                    <img class="contacts__icon" src="./assets/svgs/maps.svg" alt="" width="24" height="24" />
+                </a>
+                <a href="https://www.foodracers.com/it/cities/castelfranco-veneto/restaurants/lucky-pizza-castelfranco" class="contacts__link" aria-label="Ordina su Foodracers" rel="noopener noreferrer" target="_blank">
+                    <img class="contacts__icon" src="./assets/svgs/foodracer.svg" alt="" width="24" height="24" />
+                </a>
+                <a href="tel:+393513353755" class="contacts__link" aria-label="Chiamaci">
+                    <img class="contacts__icon" src="./assets/svgs/phone.svg" alt="" width="24" height="24" />
+                </a>
+                <a href="https://www.instagram.com/luckypizza_official/" class="contacts__link" aria-label="Seguici su Instagram" rel="noopener noreferrer" target="_blank">
+                    <img class="contacts__icon" src="./assets/svgs/instagram.svg" alt="" width="24" height="24" />
+                </a>
+                <a href="https://www.facebook.com/share/XznnFEq6gCsdy27y/" class="contacts__link" aria-label="Seguici su Facebook" rel="noopener noreferrer" target="_blank">
+                    <img class="contacts__icon" src="./assets/svgs/facebook.svg" alt="" width="24" height="24" />
+                </a>
+                <a href="mailto:comarinlucky@gmail.com" class="contacts__link" aria-label="Scrivici una email">
+                    <img class="contacts__icon" src="./assets/svgs/mail.svg" alt="" width="24" height="24" />
+                </a>
+            </section>
+        </main>
+
+        <footer class="footer">
             P.IVA 05470790261
-        </div>
-        <img class="first-pizza" src="./assets/svgs/first-pizza.svg" alt="" />
-        <img class="second-pizza" src="./assets/svgs/second-pizza.svg" alt="" />
+        </footer>
 
+        <img class="decor decor--left" src="./assets/svgs/first-pizza.svg" alt="" aria-hidden="true" />
+        <img class="decor decor--right" src="./assets/svgs/second-pizza.svg" alt="" aria-hidden="true" />
     </div>
+
+    <script>
+        // Navigation toggle
+        const toggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav-menu');
+
+        toggle.addEventListener('click', () => {
+            const isOpen = nav.classList.toggle('open');
+            toggle.classList.toggle('active');
+            toggle.setAttribute('aria-expanded', isOpen);
+            toggle.setAttribute('aria-label', isOpen ? 'Chiudi menu' : 'Apri menu');
+        });
+
+        nav.querySelectorAll('.nav__link').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('open');
+                toggle.classList.remove('active');
+                toggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Real-time clock
+        function updateClock() {
+            const now = new Date();
+            const hours = now.getHours() % 12;
+            const minutes = now.getMinutes();
+            const seconds = now.getSeconds();
+
+            const hourDeg = (hours * 30) + (minutes * 0.5);
+            const minuteDeg = (minutes * 6) + (seconds * 0.1);
+            const secondDeg = seconds * 6;
+
+            document.getElementById('hour-hand').style.transform = 'rotate(' + hourDeg + 'deg)';
+            document.getElementById('minute-hand').style.transform = 'rotate(' + minuteDeg + 'deg)';
+            document.getElementById('second-hand').style.transform = 'rotate(' + secondDeg + 'deg)';
+        }
+
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
 </body>

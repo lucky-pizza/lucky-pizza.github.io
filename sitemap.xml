@@ -2,17 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://luckypizza.it/</loc>
+        <lastmod>2026-05-15</lastmod>
         <changefreq>yearly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://luckypizza.it/about-us.html</loc>
-        <changefreq>yearly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
         <loc>https://luckypizza.it/time.html</loc>
+        <lastmod>2026-05-15</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://luckypizza.it/about-us.html</loc>
+        <lastmod>2026-05-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
     </url>
 </urlset>

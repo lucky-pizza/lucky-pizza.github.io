@@ -1,25 +1,26 @@
 {
     "name": "Lucky Pizza",
     "short_name": "Lucky Pizza",
+    "description": "Pizzeria d'asporto a Castelfranco Veneto",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#ff0000",
+    "background_color": "#1a0f08",
+    "theme_color": "#1a0f08",
     "icons": [
         {
-            "src": "assets/svgs/ck_180x180.svg",
+            "src": "assets/svgs/ck_180x180.png",
             "sizes": "180x180",
-            "type": "image/svg+xml"
+            "type": "image/png"
         },
         {
-            "src": "assets/svgs/ck_32x32.svg",
+            "src": "assets/svgs/ck_32x32.png",
             "sizes": "32x32",
-            "type": "image/svg+xml"
+            "type": "image/png"
         },
         {
-            "src": "assets/svgs/ck_16x16.svg",
+            "src": "assets/svgs/ck_16x16.png",
             "sizes": "16x16",
-            "type": "image/svg+xml"
+            "type": "image/png"
         }
     ]
 }
